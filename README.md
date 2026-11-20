@@ -44,7 +44,7 @@ O **FitStore** foi projetado sob medida para o **Marcão**, proprietário da **A
 
 1. Acesse o [OnlineGDB](https://www.onlinegdb.com) ou o [Replit](https://replit.com) e selecione a linguagem **C**.
 
-2. Substitua o código padrão pelo conteúdo de `src/fitstore.c`.
+2. Substitua o código padrão pelo conteúdo de `fitstore.c`.
 
 3. Clique em **Run**.
 
@@ -59,7 +59,7 @@ O **FitStore** foi projetado sob medida para o **Marcão**, proprietário da **A
 ```
 git clone https://github.com/SEU-USUARIO/fitstore-felipe.git
 cd fitstore-felipe
-gcc -Wall -Wextra -pedantic -std=c99 src/fitstore.c -o fitstore
+gcc -Wall -Wextra -pedantic -std=c99 fitstore.c -o fitstore
 ./fitstore            # No Windows: fitstore.exe
 
 ```
@@ -225,16 +225,10 @@ O desenvolvimento seguiu uma arquitetura modular dividida em **Agentes** dentro 
 ## 6. Estrutura de pastas e arquivos de dados
 
 ```
-fitstore/
-├── src/
-│   └── fitstore.c              # Código-fonte completo do sistema
-├── docs/
-│   ├── Guia_do_Aluno_FitStore.docx
-│   └── Etapa0_Briefing.docx
-├── relatorio/
-│   └── Relatorio_Tecnico.pdf   # Registro de erros, soluções e uso de IA
-├── prints/                     # Capturas de tela utilizadas neste README
-├── .gitignore                  # Ignora executáveis e arquivos .dat locais
+fitstore
+├── fitstore.c
+├── Relatorio_Tecnico.pdf
+├── TESTES/                     # Capturas de tela utilizadas neste README
 └── README.md                   # Documentação do projeto
 
 ```
